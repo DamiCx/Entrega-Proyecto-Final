@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'worksans-extralight', work sans, sans-serif; }
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999; }
+  header nav {
+    background: #f2d600; }
+    header nav div #navbarNavDropdown {
+      justify-content: right; }
+
+#mainVentaCubiertas {
+  background-image: url("../img/fondo3.png");
+  background-size: contain;
+  background-attachment: fixed; }
+  #mainVentaCubiertas .carrito {
+    display: none;
+    position: sticky;
+    min-height: 35px;
+    top: 61px;
+    width: 100%;
+    padding: 10px;
+    background-color: whitesmoke; }
+    #mainVentaCubiertas .carrito .carritoWrapper .imgCarrito {
+      width: 30px;
+      margin-right: 10px; }
+    #mainVentaCubiertas .carrito .carritoWrapper a {
+      text-decoration: underline;
+      color: #60d543; }
+    #mainVentaCubiertas .carrito .carritoWrapper span {
+      color: #60d543; }
+    #mainVentaCubiertas .carrito .carritoWrapper .arrowCarrito {
+      margin-left: 10px; }
+      #mainVentaCubiertas .carrito .carritoWrapper .arrowCarrito img {
+        animation-duration: .6s;
+        animation-name: flechaAnimada;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        width: 18px; }
+
+@keyframes flechaAnimada {
+  from {
+    transform: translateX(3px); }
+  to {
+    transform: translateX(-3px); } }
+  #mainVentaCubiertas .pedidoDatos .comprador {
+    text-align: center;
+    margin-top: 1rem; }
+    #mainVentaCubiertas .pedidoDatos .comprador input {
+      font-size: 1.3rem;
+      display: block;
+      min-width: 350px;
+      margin: 3px auto;
+      padding: 3px 8px;
+      border: none;
+      background-color: #999;
+      color: #ffffff; }
+    #mainVentaCubiertas .pedidoDatos .comprador .btnContinuarCompra {
+      transition: all .7s; }
+      #mainVentaCubiertas .pedidoDatos .comprador .btnContinuarCompra:hover {
+        background-color: #f2d600; }
+    #mainVentaCubiertas .pedidoDatos .comprador .alertaCompra {
+      color: red; }
+  #mainVentaCubiertas .grillaWrapper {
+    opacity: 0;
+    transition: opacity .7s; }
+    #mainVentaCubiertas .grillaWrapper .grillaProductos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr)); }
+      #mainVentaCubiertas .grillaWrapper .grillaProductos .cajaProducto {
+        background-color: white;
+        box-shadow: 2px 2px 8px #3c3c3c;
+        margin: 20px auto;
+        text-align: center;
+        max-width: 350px;
+        border-radius: 5px;
+        padding-top: 10px; }
+        #mainVentaCubiertas .grillaWrapper .grillaProductos .cajaProducto .imgProducto {
+          width: 55%; }
+        #mainVentaCubiertas .grillaWrapper .grillaProductos .cajaProducto .precioCubierta {
+          font-size: 1.5rem; }
+        #mainVentaCubiertas .grillaWrapper .grillaProductos .cajaProducto .descripcionCubierta {
+          background-color: #e3e3e3;
+          padding: 6px 0px; }
+        #mainVentaCubiertas .grillaWrapper .grillaProductos .cajaProducto .btnAgregarProducto {
+          border: none;
+          border-radius: 5px;
+          padding: 7px;
+          width: 110px;
+          background-color: #f2d600;
+          margin-bottom: 25px;
+          color: #292929;
+          transition: background-color .5s; }
+          #mainVentaCubiertas .grillaWrapper .grillaProductos .cajaProducto .btnAgregarProducto:hover {
+            background-color: #efef00; }
+
+main #textoHeroVentaCubiertas {
+  text-align: end;
+  text-shadow: 5px 5px 8px black, 0 0 2em blue, 0 0 0.8em blue; }
+  main #textoHeroVentaCubiertas a {
+    color: #f8ff29; }
+
+main #quienesSomos {
+  color: rgba(0, 0, 0, 0.7);
+  background-color: #ececec;
+  padding: 2rem; }
+  main #quienesSomos .tituloSomos {
+    font-size: calc(1.325rem + .9vw);
+    margin-bottom: 20px; }
+  main #quienesSomos .texto {
+    text-align: justify; }
+  main #quienesSomos .img {
+    display: none; }
+
+main #nuestrosClientes {
+  color: rgba(0, 0, 0, 0.7);
+  padding: 2rem; }
+  main #nuestrosClientes .animacion {
+    height: 150px;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 25s;
+    animation-name: scroll; }
+  main #nuestrosClientes .animacion img {
+    height: 100%; }
+
+@keyframes scroll {
+  0% {
+    left: 100%; }
+  100% {
+    left: -900%; } }
+  main #nuestrosClientes .animacion:hover {
+    animation-play-state: paused; }
+
+main #productosServicios {
+  color: rgba(0, 0, 0, 0.7);
+  background-color: #ececec; }
+  main #productosServicios .titulo {
+    padding: 2rem; }
+  main #productosServicios .cardsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; }
+    main #productosServicios .cardsContainer .imgCard {
+      width: 130px;
+      text-align: center;
+      margin-bottom: 30px; }
+      main #productosServicios .cardsContainer .imgCard .imgServicio {
+        width: 100%;
+        height: 66%; }
+      main #productosServicios .cardsContainer .imgCard p {
+        margin-top: 15px;
+        margin-bottom: 0;
+        font-weight: 600; }
+
+main #contacto {
+  padding: 2rem;
+  padding-bottom: 1rem; }
+  main #contacto .tituloContacto {
+    text-align: center; }
+    main #contacto .tituloContacto h2 {
+      font-size: 1.8rem; }
+  main #contacto #formyDetalles #formContainer {
+    margin-bottom: 1rem; }
+    main #contacto #formyDetalles #formContainer .tituloFormulario {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem; }
+    main #contacto #formyDetalles #formContainer #formularioContacto input {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 5px;
+      border: 1px solid gray; }
+    main #contacto #formyDetalles #formContainer #formularioContacto textarea {
+      width: 100%; }
+    main #contacto #formyDetalles #formContainer #formularioContacto .btnSubmit {
+      border: none;
+      background-color: #181818;
+      padding: 8px;
+      color: #ececec;
+      font-weight: 600;
+      transition: all .3s; }
+      main #contacto #formyDetalles #formContainer #formularioContacto .btnSubmit:hover {
+        background-color: #a7a7a7;
+        color: #181818; }
+  main #contacto #detallesContacto .tituloDetallesContacto {
+    font-size: 1.5rem; }
+
+#mainCarrito p {
+  margin: 0; }
+
+#mainCarrito .tituloCarrito {
+  position: sticky;
+  top: 61px;
+  width: 100%;
+  background-color: #292929;
+  color: whitesmoke;
+  padding: 10px; }
+  #mainCarrito .tituloCarrito h3 {
+    margin-bottom: 0;
+    font-size: 1.3rem; }
+
+#mainCarrito .productosCarrito .producto {
+  border-bottom: 1px solid gray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  max-width: 385px;
+  padding: 30px 10px;
+  display: grid;
+  grid-template-areas: 'titulo titulo' 'img medida' 'img precio' 'img cantidad' 'img subtotal';
+  grid-template-rows: 2rem repeat(3, 2rem);
+  grid-template-columns: 1fr 1fr; }
+  #mainCarrito .productosCarrito .producto .imgProducto {
+    width: 75%; }
+    #mainCarrito .productosCarrito .producto .imgProducto img {
+      width: 100%; }
+  #mainCarrito .productosCarrito .producto .descripcionCubierta {
+    grid-area: titulo;
+    margin-bottom: 2rem; }
+  #mainCarrito .productosCarrito .producto .imgProducto {
+    grid-area: img; }
+  #mainCarrito .productosCarrito .producto .medidaCubierta {
+    grid-area: medida; }
+  #mainCarrito .productosCarrito .producto .precioCubierta {
+    grid-area: precio; }
+    #mainCarrito .productosCarrito .producto .precioCubierta .btnQuitar {
+      margin-left: 80px; }
+      #mainCarrito .productosCarrito .producto .precioCubierta .btnQuitar img {
+        width: 20%; }
+  #mainCarrito .productosCarrito .producto .cantidad {
+    grid-area: cantidad; }
+  #mainCarrito .productosCarrito .producto .subTotal {
+    grid-area: subtotal; }
+
+#mainCarrito .accionesCarrito {
+  background-color: #292929; }
+  #mainCarrito .accionesCarrito .totalCompra {
+    color: whitesmoke;
+    padding: 10px;
+    border-bottom: 1px solid whitesmoke; }
+  #mainCarrito .accionesCarrito a .seguirComprando {
+    margin: 15px;
+    margin-left: 10px;
+    padding: 8px;
+    background-color: #f2d600;
+    border: none;
+    color: #292929; }
+  #mainCarrito .accionesCarrito .finCompra {
+    padding: 8px;
+    background-color: #f2d600;
+    border: none;
+    color: #292929; }
+
+footer {
+  color: #343434;
+  background-color: #f2d600;
+  padding: 2rem; }
+  footer .linkHome a {
+    color: #343434; }
+  footer .tituloFooter {
+    font-size: 1.5rem; }
+  footer i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    transition: all .3s; }
+    footer i:hover {
+      color: gray; }

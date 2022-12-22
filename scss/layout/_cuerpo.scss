@@ -1,0 +1,123 @@
+
+main{
+    #textoHeroVentaCubiertas{
+        text-align: end;
+        text-shadow: 5px 5px 8px black, 0 0 2em blue, 0 0 0.8em blue;
+        a{
+            color: #f8ff29;
+        }
+    }
+    #quienesSomos{
+        color: hsla(200,0%,0%,.7);
+        background-color: #ececec;
+        .tituloSomos{
+            font-size: calc(1.325rem + .9vw);
+            margin-bottom: 20px;
+        }
+        padding: 2rem;
+        .texto{
+            text-align: justify;
+        }
+        .img{
+            display: none;
+        }
+    }
+    #nuestrosClientes{
+        color: hsla(200,0%,0%,.7);
+        padding: 2rem;
+        .animacion {
+            height: 150px;
+            position: relative;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 25s;
+            animation-name: scroll;
+        }
+        .animacion img{
+            height: 100%;
+        }
+        @keyframes scroll {
+            0% {left:100%;}
+            100% {left:-900%;}
+        }
+        .animacion:hover{
+            animation-play-state: paused;
+        }
+    }
+    #productosServicios{
+        color: hsla(200,0%,0%,.7);
+        background-color: #ececec;
+        .titulo{
+            padding: 2rem;
+        }
+        .cardsContainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            .imgCard{
+                width: 130px;
+                text-align: center;
+                margin-bottom: 30px;
+                .imgServicio{
+                    width: 100%;
+                    height: 66%;
+                }
+                p{
+                    margin-top: 15px;
+                    margin-bottom: 0;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    #contacto{
+        padding: 2rem;
+        padding-bottom: 1rem;
+        .tituloContacto{
+            text-align: center;
+            h2{
+                font-size: 1.8rem;
+            }
+        }
+        #formyDetalles{
+            #formContainer{
+                margin-bottom: 1rem;
+                .tituloFormulario{
+                    font-size: 1.5rem;
+                    margin-top: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+                #formularioContacto{
+                    input{
+                        display: block;
+                        width: 100%;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        padding: 5px;
+                        border: 1px solid gray
+                    }
+                    textarea{
+                        width: 100%;
+                    }
+                    .btnSubmit{
+                        border: none;
+                        background-color: rgb(24, 24, 24);
+                        padding: 8px;
+                        color: #ececec;
+                        font-weight: 600;
+                        transition: all .3s;
+                        &:hover{
+                            background-color: rgb(167, 167, 167);
+                            color: rgb(24, 24, 24);
+                        }
+                    }
+                }
+            }
+        }
+        #detallesContacto{
+            .tituloDetallesContacto{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
